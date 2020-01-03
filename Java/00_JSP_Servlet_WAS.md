@@ -4,24 +4,23 @@
 
 중요한 개념들이니 다시 공부하고자 작성한다.
 
+<br>
 
-
-
+<br>
 
 ## 1. Servlet
 
-#### Servlet?
+### Servlet?
 
 - 자바 기반의 웹 어플리케이션 프로그래밍 기술
 - 자바 코드 속에 HTML 소스 코드가 들어가는 구조
 - 자바 언어를 기반으로 동적인 contents를 생성
-
 - 서블릿은 HttpServlet을 상속받은 **자바의 클래스**기 때문에 .java라는 확장자를 갖음
 - WAS(Tomcat) 위에 동작
 
+<br>
 
-
-#### Servlet의 단점
+### Servlet의 단점
 
 - Servlet은 프로그램 내에서 HTML을 처리하기 때문에 간단한 표현을 변경할 때에도 컴파일을 다시 해야함
 
@@ -29,13 +28,13 @@
 
   ​		∴ **JSP**가 탄생
 
+<br>
 
-
-
+<br>
 
 ## 2. JSP (Java Server Pages)
 
-#### JSP?
+### JSP?
 
 - Servlet을 기반으로 한 웹 어플리케이션 프로그래밍 기술
 - HTML 소스 코드 속에 Java 코드가 들어가는 형태
@@ -50,7 +49,7 @@
 > - Server Side Script : 해당 소스의 실행 결과를 확인하기 위해 웹 서버를 거쳐야 하는 스크립트
 > - Client Side Script : 내장된 번역기(Internet Explorer 등)에 의해 실행되는 스크립트로  서버를 거치지 않고 사용자 측에서 처리되는 스크립트
 
-
+<br>
 
 ## 3. JSP & Servlet
 
@@ -62,9 +61,9 @@
   - Servlet → Controller (Business Logic)에 좋음
   - JSP → View (Presentation Logic)에 좋음
 
+<br>
 
-
-
+<br>
 
 ## 4. WAS (Web Application Server)
 
@@ -73,16 +72,16 @@
 - 주로 DB 서버와 같이 수행됨
 - ex)Tomcat, tMAx jeus 등
 
+<br>
 
-
-#### Web Container
+### Web Container
 
 - JSP와 Servlet을 실행시킬수 있는 소프트웨어를 웹 컨테이너 or 서블릿 컨테이너라고 부름
 - 웹 서버에서 JSP를 요청하면 Tomcat에서 JSP 파일을 Servlet으로 변환해 컴파일하고 서블릿 수행 결과를 다시 웹서버에 전달
 
+<br>
 
-
-#### WAS 내 JSP가 동작하는 구조
+### WAS 내 JSP가 동작하는 구조
 
 ![jspContainer](http://myblog.opendocs.co.kr/wp-content/uploads/2014/10/jspContainer.png)
 
@@ -95,9 +94,9 @@
 5. Class 파일을 메모리에 적재 후 **실행**한 결과를 웹서버에 넘겨줌
 6. 웹서버는 브라우저가 인식 가능한 정적페이지를 구성해 클라이언트에 **응답**
 
+<br>
 
-
-#### Tomcat VS Apache
+### Tomcat VS Apache
 
 - Apache
   - Web Server (HTTP 요청 처리)
