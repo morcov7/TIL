@@ -147,6 +147,8 @@ ddsd0000/simpleweb   latest              a98df66746ab        46 seconds ago     
 
 <br>
 
+<br>
+
 ## Docker Container 만들기
 
 ```powershell
@@ -156,6 +158,8 @@ ddsd0000/simpleweb   latest              a98df66746ab        46 seconds ago     
 > docker ps -as
 	// 죽어있음 WHY? -> 로그확인
 ```
+
+<br>
 
 #### 기본 명령어
 
@@ -180,6 +184,8 @@ ddsd0000/simpleweb   latest              a98df66746ab        46 seconds ago     
 
 <br>
 
+<br>
+
 ## package 파일이 X라서 오류
 
 #### Dockerfile
@@ -194,7 +200,7 @@ CMD ["npm", "start"]
 
 - COPY [소스] [대상]
 
-
+<br>
 
 #### Build
 
@@ -209,7 +215,7 @@ CMD ["npm", "start"]
 > docker run -d -p 8080:8080 ddsd0000/simpleweb:latest
 ```
 
-
+<br>
 
 ## 계정에 이미지 올리기
 
@@ -220,7 +226,7 @@ CMD ["npm", "start"]
 - /이미지실제 이름 : tag(버전)
 - docker hub의 계정으로 이동하면 이미지 등록된걸 볼 수 있음
 
-
+<br>
 
 ## 계정의 이미지 다운
 
@@ -232,7 +238,7 @@ CMD ["npm", "start"]
 
 - `tag` 새롭게 이름 붙이기
 
-
+<br>
 
 ##  Container에 추가 명령어 할당
 
@@ -255,7 +261,9 @@ CMD ["npm", "start"]
 - `exec -it` + `컨테이너 정보` + `명령어`
 - `sh` : 쉘스크립트로 사용하겠다
 
+<br>
 
+<br>
 
 # 3. COPY 디렉터리 변경
 
@@ -263,7 +271,7 @@ CMD ["npm", "start"]
 
 - 따라서 /home/node에 copy하도록 변경
 
-  
+  <br>
 
 ```dockerfile
 FROM node:alpine
@@ -278,7 +286,7 @@ CMD ["npm", "start"]
 - `WORKDIR` : 현재 디렉토리를 변경해줌
 - npm 명령도 문제 없이 실행됨
 
-
+<br>
 
 ```powershell
 > docker build -t ddsd0000/simpleweb:latest .
@@ -297,7 +305,9 @@ index.js           node_modules       package-lock.json  package.json
 
 - docker restart : ID 변경시키지 않으면서 새로운 변경된 사항 실행 가능
 
+<br>
 
+<br>
 
 # 3. 그외 명령어
 
@@ -310,14 +320,14 @@ index.js           node_modules       package-lock.json  package.json
   - 8080 : 컨테이너 포트
   - 호스트로 9000으로 호출해야지만 8080컨테이너로 넘어감
 
-
+<br>
 
 ### 이미지 빌드
 
 - 도커파일 가지고 이미지 만들어줌
 - 나만의 이미지를 만들고싶으면 도커파일 만든다
 
-
+<br>
 
 ### docker search
 
@@ -325,7 +335,7 @@ index.js           node_modules       package-lock.json  package.json
 
 - ex) docker search mysql
 
-  
+  <br>
 
 ### docker tag
 
@@ -337,9 +347,9 @@ index.js           node_modules       package-lock.json  package.json
 
 - 이미지는 동일 / 태그만 다름
 
+<br>
 
-
-
+<br>
 
 ## 컨테이너 실행
 
@@ -351,7 +361,7 @@ index.js           node_modules       package-lock.json  package.json
 - `--name` : 컨테이너 이름 설정
 - `-it` : 터미널에서 입력모드
 
-
+<br>
 
 ### mysql 다운
 
@@ -361,10 +371,10 @@ index.js           node_modules       package-lock.json  package.json
 > docker exec -it mysql bash
 ```
 
-- `-e`
+- `-e` 를 사용해 password 부분 설정
 - host이름 = container 이름
 
-
+<br>
 
 ### 기본 명령어
 
