@@ -83,7 +83,9 @@
 
 ### WAS 내 JSP가 동작하는 구조
 
-![jspContainer](http://myblog.opendocs.co.kr/wp-content/uploads/2014/10/jspContainer.png)
+<img src="http://myblog.opendocs.co.kr/wp-content/uploads/2014/10/jspContainer.png" alt="jspContainer" style="zoom:67%;" />
+
+
 
 ​										출처 : http://myblog.opendocs.co.kr/archives/440
 
